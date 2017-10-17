@@ -1,0 +1,191 @@
+/* reset css
+---------------------------------------------------------- */
+
+#plugin-search-selector,
+#plugin-search-selector *
+{
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック体", "Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro W6","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic","Lato", "tahoma",sans-serif;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333333;
+  text-align: left;
+}
+#plugin-search-selector a {
+  color: #333333;
+  text-decoration: none;
+}
+
+#plugin-search-selector a:focus {
+  outline: thin dotted;
+}
+#plugin-search-selector a:hover,
+#plugin-search-selector a:active
+{
+  outline: 0;
+}
+#plugin-search-selector a:hover {
+  text-decoration: underline;
+}
+#plugin-search-selector table
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+  width: 100%;
+}
+#plugin-search-selector td,
+#plugin-search-selector th {
+  padding: 0;
+}
+
+#plugin-search-selector ul,#plugin-search-selector dl,#plugin-search-selector ol
+{ text-indent: 0;}
+
+#plugin-search-selector li{ list-style: none;}
+
+#plugin-search-selector img
+{ border: 0;}
+
+
+/*
+    html5への対応
+*/
+
+#plugin-search-selector html,#plugin-search-selector body,#plugin-search-selector div,#plugin-search-selector span,#plugin-search-selector object,#plugin-search-selector iframe,#plugin-search-selector h1,#plugin-search-selector h2,#plugin-search-selector h3,#plugin-search-selector h4,#plugin-search-selector h5,#plugin-search-selector h6,#plugin-search-selector p,#plugin-search-selector blockquote,#plugin-search-selector pre,#plugin-search-selector abbr,#plugin-search-selector address,#plugin-search-selector cite,#plugin-search-selector code,#plugin-search-selector del,#plugin-search-selector dfn,#plugin-search-selector em,#plugin-search-selector img,#plugin-search-selector ins,#plugin-search-selector kbd,#plugin-search-selector q,#plugin-search-selector samp,#plugin-search-selector small,#plugin-search-selector strong,#plugin-search-selector sub,#plugin-search-selector sup,#plugin-search-selector var,#plugin-search-selector b,#plugin-search-selector i,#plugin-search-selector dl,#plugin-search-selector dt,#plugin-search-selector dd,#plugin-search-selector ol,#plugin-search-selector ul,#plugin-search-selector li,#plugin-search-selector fieldset,#plugin-search-selector form,#plugin-search-selector label,#plugin-search-selector legend,#plugin-search-selector table,#plugin-search-selector caption,#plugin-search-selector tbody,#plugin-search-selector tfoot,#plugin-search-selector thead,#plugin-search-selector tr,#plugin-search-selector th,#plugin-search-selector td,#plugin-search-selector article,#plugin-search-selector aside,#plugin-search-selector canvas,#plugin-search-selector details,#plugin-search-selector figcaption,#plugin-search-selector figure,#plugin-search-selector footer,#plugin-search-selector header,#plugin-search-selector hgroup,#plugin-search-selector menu,#plugin-search-selector nav,#plugin-search-selector section,#plugin-search-selector summary,#plugin-search-selector time,#plugin-search-selector mark,#plugin-search-selector audio,#plugin-search-selector video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  background:transparent;
+}
+
+#plugin-search-selector article, #plugin-search-selector aside, #plugin-search-selector details, #plugin-search-selector figcaption, #plugin-search-selector figure, #plugin-search-selector footer, #plugin-search-selector header, #plugin-search-selector hgroup, #plugin-search-selector menu, #plugin-search-selector nav, #plugin-search-selector section {
+  display:block;
+}
+
+
+#plugin-search-selector input {
+  line-height: normal;
+}
+
+#plugin-search-selector input,
+#plugin-search-selector textarea {
+  background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */
+  padding: 2px;
+}
+
+#plugin-search-selector input[type="button"],
+#plugin-search-selector input[type="reset"],
+#plugin-search-selector input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* Buttons */
+
+.contributor-posts-link,
+#plugin-search-selector input[type="button"],
+#plugin-search-selector input[type="reset"],
+#plugin-search-selector input[type="submit"] {
+}
+
+.contributor-posts-link:hover,
+#plugin-search-selector input[type="button"]:hover,
+#plugin-search-selector input[type="button"]:focus,
+#plugin-search-selector input[type="reset"]:hover,
+#plugin-search-selector input[type="reset"]:focus,
+#plugin-search-selector input[type="submit"]:hover,
+#plugin-search-selector input[type="submit"]:focus {
+}
+
+.contributor-posts-link:active,
+#plugin-search-selector input[type="button"]:active,
+#plugin-search-selector input[type="reset"]:active,
+#plugin-search-selector input[type="submit"]:active {
+}
+
+#plugin-search-selector html input[disabled] {
+  cursor: default;
+}
+
+#plugin-search-selector input[type="checkbox"],
+#plugin-search-selector input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#plugin-search-selector input,#plugin-search-selector select {
+  vertical-align:middle;
+}
+
+/* styling css
+---------------------------------------------------------- */
+
+#plugin-search-selector {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 9999999;
+  border-radius: 5px;
+  border: 2px solid #666;
+  font-size: 10px;
+  transition: opacity .3s;
+}
+#plugin-search-selector #plugin-search-selector-close {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: #fff;
+  background-color: #aaa;
+  padding: 5px;
+  z-index: 9999999;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#plugin-search-selector #plugin-search-selector-text {
+  color: #666;
+  font-size: 10px;
+  line-height: 1;
+  margin: 10px 0;
+}
+#plugin-search-selector #plugin-search-selector-input {
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid #666;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: normal;
+}
+#plugin-search-selector #plugin-search-selector-input.plugin-search-selector-is-error {
+  background-color: #555;
+  color: #fff;
+}
+#plugin-search-selector #plugin-search-selector-submit-class {
+  display: flex;
+  margin-top: 5px;
+}
+#plugin-search-selector #plugin-search-selector-submit-class ,
+#plugin-search-selector #plugin-search-selector-submit-id {
+  display: inline-block;
+  padding: .5em;
+  background-color: #999;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.plugin-search-selector-highlightStyle {
+  box-shadow : 0 0 0 4px rgba(255, 0, 0, .2), inset 0 0 0 1px rgba(255, 0, 0, .2);
+}
+.plugin-search-selector-highlightCurrentStyle {
+  box-shadow : 0 0 0 4px rgba(255, 0, 0, 1), inset 0 0 0 1px rgba(255, 0, 0, 1);
+}

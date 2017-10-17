@@ -1,0 +1,30 @@
+﻿{
+  "manifest_version": 2,
+  "name": "セレクタ検索",
+  "version": "0.2.1",
+  "description": "ページ内のセレクタを検索 [ cnt + shift + F ]で表示",
+  "browser_action": {
+    "default_icon": {
+      "19": "./icon_19x19.png",
+      "38": "./icon_38x38.png"
+    },
+    "default_title": "search selector"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["./style.css"],
+      "js": ["./jquery-2.1.1.min.js", "./function.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "scripts": ["./background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "background",
+    "<all_urls>"
+  ]
+}
