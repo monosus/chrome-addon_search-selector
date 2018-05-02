@@ -92,7 +92,7 @@ $(function(){
     }
 
     //start:検索値の判定(セレクタを適切に使用しているかの判定)
-    if(!error||selector.match(regExpId)||selector.match(regExpClass)||selector.match(regExpAttribute)||selector.match(regExpPseudo)||selector.match(regExpTag)||selector.match(regExpComma)){
+    if(!error&&selector.match(regExpId)||selector.match(regExpClass)||selector.match(regExpAttribute)||selector.match(regExpPseudo)||selector.match(regExpTag)||selector.match(regExpComma)){
       repetitionFunc(selector,typeArg);
     }else{
       var selectorConvID = selector.replace(/^/,'#');
